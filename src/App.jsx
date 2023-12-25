@@ -20,38 +20,38 @@ function App() {
     setPage(value);
   };
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // const [scrollPosition, setScrollPosition] = useState(0);
 
-  const handleScroll = () => {
-    const currentPosition = window.scrollY;
+  // const handleScroll = () => {
+  //   const currentPosition = window.scrollY;
 
-    const scrollThreshold = 50;
+  //   const scrollThreshold = 50;
 
-    if (currentPosition > scrollPosition + scrollThreshold) {
-      setView((prevView) => getNextView(prevView, "down"));
-    }
+  //   if (currentPosition > scrollPosition + scrollThreshold) {
+  //     setView((prevView) => getNextView(prevView, "down"));
+  //   }
 
-    if (currentPosition < scrollPosition - scrollThreshold) {
-      setView((prevView) => getNextView(prevView, "up"));
-    }
+  //   if (currentPosition < scrollPosition - scrollThreshold) {
+  //     setView((prevView) => getNextView(prevView, "up"));
+  //   }
 
-    setScrollPosition(currentPosition);
-  };
+  //   setScrollPosition(currentPosition);
+  // };
 
-  const getNextView = (currentView, direction) => {
-    switch (currentView) {
-      case "Home":
-        return direction === "down" ? "Portfolio" : "Contact";
-      case "Portfolio":
-        return direction === "down" ? "About" : "Home";
-      case "About":
-        return direction === "down" ? "Contact" : "Portfolio";
-      case "Contact":
-        return direction === "down" ? "Home" : "About";
-      default:
-        return currentView;
-    }
-  };
+  // const getNextView = (currentView, direction) => {
+  //   switch (currentView) {
+  //     case "Home":
+  //       return direction === "down" ? "Portfolio" : "Contact";
+  //     case "Portfolio":
+  //       return direction === "down" ? "About" : "Home";
+  //     case "About":
+  //       return direction === "down" ? "Contact" : "Portfolio";
+  //     case "Contact":
+  //       return direction === "down" ? "Home" : "About";
+  //     default:
+  //       return currentView;
+  //   }
+  // };
   const handleKeyDown = (event) => {
     if (event.keyCode === 40) {
       setView((prevView) => {
@@ -83,11 +83,11 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
     window.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      // window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);

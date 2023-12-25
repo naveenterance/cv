@@ -58,7 +58,7 @@ const Portfolio = ({ onPageChange }) => {
   return (
     <>
       {page == 1 && (
-        <div className=" h-full  lg:mx-96  mt-24  mb-12 lg:flex  font-mono">
+        <div className=" h-full  lg:mx-96  lg:mt-24 mt-8  mb-12 lg:flex  font-mono">
           <a
             href="https://naveenterance.github.io/pokemon-api/"
             target="_blank"
