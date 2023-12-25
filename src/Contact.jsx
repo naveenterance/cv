@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from "react";
 const Contact = () => {
+  const handleDownload = () => {
+    // Replace 'your-pdf-file.pdf' with the actual file name
+    const pdfUrl = "./Naveen_Resume.pdf";
+
+    const a = document.createElement("a");
+    a.href = pdfUrl;
+    a.download = "downloaded-file.pdf"; // Specify the desired download file name
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
   return (
     <div class="p-6  bg-gray-100  sm:rounded-lg mt-12 lg:w-3/4 mx-auto animate__animated animate__fadeInRight">
       <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight animate__animated animate__fadeInLeft">
@@ -99,6 +110,20 @@ const Contact = () => {
           >
             https://www.linkedin.com/in/naveen-terance-a0732a14b/
           </a>
+        </div>
+      </div>
+      <div class="flex items-center mt-4 text-gray-600  hover:underline hover:decoration-red-300 hover:decoration-2">
+        <img
+          width="40"
+          height="40"
+          src="https://img.icons8.com/office/40/open-resume.png"
+          alt="open-resume"
+        />
+        <div
+          class="ml-1  lg:text-sm text-xs tracking-wide font-semibold w-40 "
+          onClick={handleDownload}
+        >
+          Download Resume
         </div>
       </div>
     </div>

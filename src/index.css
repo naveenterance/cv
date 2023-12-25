@@ -10,9 +10,20 @@
     transform: rotate(360deg);
   }
 }
+@keyframes rotate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 
 .rotate {
-  animation: rotate 5s linear infinite; /* Adjust the duration as needed */
+  animation: rotate 2s linear infinite; /* Adjust the duration as needed */
+}
+.rotate2 {
+  animation: rotate2 6s linear infinite; /* Adjust the duration as needed */
 }
 
 @keyframes slide {

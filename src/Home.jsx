@@ -3,15 +3,21 @@ const Home = () => {
   return (
     <>
       {" "}
-      <div className="w-1/2  h-full  lg:mx-auto ml-4 mt-24  mb-12 flex">
+      <div className="w-1/2  h-full  lg:mx-96 ml-8 mt-24  mb-12 flex">
         <div className="flex-col">
           {" "}
-          <p className="xl:text-6xl text-4xl italic  break-normal text-gray-500 animate__animated animate__fadeInLeft mr-4">
+          <p className="xl:text-4xl text-4xl italic  break-normal text-gray-500 animate__animated animate__fadeInLeft mr-4">
             HI, <br></br>I am Naveen,<br></br> A React Dev
           </p>
+          <img
+            src="https://ssr-contributions-svg.vercel.app/_/naveenterance?chart=3dbar&format=svg"
+            className="w-56  animate__animated animate__fadeInLeft"
+          />
         </div>
         <div className="flex-col  animate__animated animate__fadeInRight ml-4">
-          <div class="absolute inset-0 border-4 border-solid border-transparent  border-l-red-300  border-r-green-300 rotate rounded-full h-1/2"></div>
+          <div class="absolute inset-0 mt-16 border-4 border-solid border-transparent  border-l-red-300  border-r-green-300 rotate rounded-full h-2"></div>
+          <div class="absolute inset-2 mt-16 border-4 border-solid border-transparent  border-l-red-300  border-r-green-300 rotate2 rounded-full h-2"></div>
+
           <svg
             className="  "
             id="visual"
