@@ -39,10 +39,17 @@ const Home = () => {
           </svg>
         </div>
       </div>
-      <div className="relative  mx-auto hover:bg-gray-100 lg:w-1/4 p-2 rounded-full ">
-        <p className="text-4xl italic text-green-300 hover:text-green-500 ">
-          Lets Go
-        </p>
+      <div className="relative  mx-auto hover:bg-gray-100 lg:w-1/4 p-2 rounded-full animate__animated animate__fadeInUp">
+        <div className="flex  justify-center items-center">
+          <p className="text-4xl italic font-bold opacity-35 ">Use Up/down</p>
+          <img
+            width="64"
+            height="64"
+            src="https://img.icons8.com/dusk/64/arrow-keys.png"
+            alt="arrow-keys"
+            className="ml-8"
+          />
+        </div>
       </div>
     </>
   );
