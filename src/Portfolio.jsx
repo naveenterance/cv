@@ -18,7 +18,7 @@ const Portfolio = () => {
     <>
       {page == 1 && (
         <div className=" h-full  lg:mx-96  mt-12  mb-12 lg:flex  font-mono">
-          <div class="relative  border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+          <div class="relative  border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] animate__animated animate__fadeInLeft">
             <div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
             <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
             <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
@@ -36,7 +36,7 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="px-4   h-4 w-8 grid grid-cols-4 gap-16 lg:my-12 my-2">
+          <div className="px-4   h-4 w-8 grid grid-cols-4 gap-16 lg:my-12 my-2 animate__animated animate__fadeInRight">
             <div className="  col-span-4">
               <p className="text-2xl font-bold  mr-4">Pokemon API</p>
               <p>as asdiasid asbdasdi</p>
@@ -111,7 +111,7 @@ const Portfolio = () => {
       )}
       {page == 2 && (
         <div className=" h-full  lg:mx-96  mt-12  mb-12 lg:flex  font-mono">
-          <div class="relative  border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+          <div class="relative  border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] animate__animated animate__fadeInLeft">
             <div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
             <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
             <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
@@ -129,7 +129,7 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="px-4   h-4 w-8 grid grid-cols-4 gap-16 lg:my-12 my-2">
+          <div className="px-4   h-4 w-8 grid grid-cols-4 gap-16 lg:my-12 my-2 animate__animated animate__fadeInLeft">
             <div className="  col-span-4">
               <p className="text-2xl font-bold  mr-4">Chat APP</p>
               <p>as asdiasid asbdasdi</p>

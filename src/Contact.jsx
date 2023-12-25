@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 const Contact = () => {
   return (
-    <div class="p-6  bg-gray-100  sm:rounded-lg mt-12 lg:w-3/4 mx-auto">
-      <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
+    <div class="p-6  bg-gray-100  sm:rounded-lg mt-12 lg:w-3/4 mx-auto animate__animated animate__fadeInRight">
+      <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight animate__animated animate__fadeInLeft">
         Get in touch
       </h1>
 
