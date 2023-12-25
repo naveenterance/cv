@@ -62,9 +62,11 @@ const Contact = () => {
             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
           />
         </svg>
-        <div class="ml-4 text-md tracking-wide font-semibold w-40">
-          9633293051
-        </div>
+        <a href="tel:+9633293051">
+          <div class="ml-4 text-md tracking-wide font-semibold w-40">
+            9633293051
+          </div>
+        </a>
       </div>
 
       <div class="flex items-center mt-2 text-gray-600 hover:underline hover:decoration-red-300 hover:decoration-2">
@@ -74,16 +76,19 @@ const Contact = () => {
           src="https://img.icons8.com/fluency/48/mail.png"
           alt="mail"
         />
-
-        <div class="ml-4 text-md tracking-wide font-semibold w-40">
-          naveenterance@gmail.com
-        </div>
+        <a href="mailto:naveenterance@gmail.com" target="_blank">
+          <div class="ml-4 text-md tracking-wide font-semibold w-40">
+            naveenterance@gmail.com
+          </div>
+        </a>
       </div>
       <div class="flex items-center mt-4 text-gray-600  hover:underline hover:decoration-red-300 hover:decoration-2">
         <img src="./github.gif" className="w-8 h-8" />
-        <div class="ml-2  lg:text-lg text-xs tracking-wide font-semibold w-40 ">
-          https://github.com/naveenterance
-        </div>
+        <a href="https://github.com/naveenterance" target="_blank">
+          <div class="ml-2  lg:text-lg text-xs tracking-wide font-semibold w-40 ">
+            https://github.com/naveenterance
+          </div>
+        </a>
       </div>
       <div class="flex items-center mt-4 text-gray-600  hover:underline hover:decoration-red-300 hover:decoration-2">
         <svg
