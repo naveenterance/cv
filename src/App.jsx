@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 import "animate.css";
 import Home from "./Home";
@@ -93,7 +92,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="fixed top-8 h-8 lg:left-1/2 left-48 transform -translate-x-1/2 -translate-y-1/2  lg:bg-gray-100  z-50 px-2 pb-4  rounded-lg">
+      <div className="fixed top-8 h-8 lg:left-1/2 left-48 transform -translate-x-1/2 -translate-y-1/2  lg:bg-gray-100  z-50 px-2 pb-4  rounded-lg bg-gray-100">
         <div className="flex  items-center">
           <p
             className={`w-24 h-1 mr-1 text-slate-700 font-extrabold  ${

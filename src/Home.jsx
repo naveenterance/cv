@@ -6,15 +6,15 @@ const Home = () => {
       <div className="w-1/2  h-full  lg:mx-96 ml-8 mt-24  mb-12 flex">
         <div className="flex-col">
           {" "}
-          <p className="xl:text-4xl text-4xl italic  break-normal text-gray-500 animate__animated animate__fadeInLeft mr-4">
+          <p className="xl:text-4xl text-4xl italic  break-normal text-gray-500 animate__animated lg:animate__fadeInLeft animate__fadeInDown mr-4">
             HI, <br></br>I am Naveen,<br></br> A React Dev
           </p>
           <img
             src="https://ssr-contributions-svg.vercel.app/_/naveenterance?chart=3dbar&format=svg"
-            className="w-56  animate__animated animate__fadeInLeft"
+            className="w-56  animate__animated lg:animate__fadeInLeft animate__fadeInDown"
           />
         </div>
-        <div className="flex-col  animate__animated animate__fadeInRight ml-4">
+        <div className="flex-col  animate__animated lg:animate__fadeInRight animate__fadeInDown ml-4">
           <div class="absolute inset-0 mt-16 border-4 border-solid border-transparent  border-l-red-300  border-r-green-300 rotate rounded-full h-2"></div>
           <div class="absolute inset-2 mt-16 border-4 border-solid border-transparent  border-l-red-300  border-r-green-300 rotate2 rounded-full h-2"></div>
 
@@ -45,7 +45,7 @@ const Home = () => {
           </svg>
         </div>
       </div>
-      <div className="relative  mx-auto hover:bg-gray-100 lg:w-1/4 p-2 rounded-full animate__animated animate__fadeInUp">
+      <div className="relative  mx-auto hover:bg-gray-100 lg:w-1/4 p-2 rounded-full animate__animated lg:animate__fadeInUp animate__fadeInUp">
         <div className="flex  justify-center items-center">
           <p className="text-4xl italic font-bold opacity-35 ">Use Up/down</p>
           <img
