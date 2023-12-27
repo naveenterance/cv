@@ -110,7 +110,7 @@ const Contact = () => {
         </svg>
         <div class="ml-1  lg:text-sm text-xs tracking-wide font-semibold w-40 ">
           <a
-            href="https://www.linkedin.com/in/naveen-terance-a0732a14b/ "
+            href="https://www.linkedin.com/in/naveen-terance/ "
             target="_blank"
           >
             https://www.linkedin.com/in/naveen-terance/
