@@ -93,7 +93,7 @@ const Home = () => {
               alt="external-repository-agile-flaticons-flat-flat-icons"
             />
             <p className="font-bold">
-              [Repositories: {repositories == 0 ? "30" : repositories}]
+              Repositories: {repositories == 0 ? "30" : repositories}
             </p>
           </div>
         </div>
@@ -147,9 +147,9 @@ const Home = () => {
         >
           <div className="bg-slate-100 p-4 rounded-3xl mb-2 font-semibold">
             <img src="./code.png" className="w-full mx-auto mb-2" />
-            [Embracing simplicity and elegance.]<br></br>
-            [Carefully chosen color palette ]<br></br>
-            [Visually pleasing & highly functional]
+            Embracing simplicity and elegance.<br></br>
+            Carefully chosen color palette <br></br>
+            Visually pleasing & highly functional
           </div>
         </div>
       </div>
