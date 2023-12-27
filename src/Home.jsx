@@ -66,7 +66,7 @@ const Home = () => {
               </div>
             </a>
             <a
-              href="https://www.linkedin.com/in/naveen-terance-a0732a14b/ "
+              href="https://www.linkedin.com/in/naveen-terance/ "
               target="_blank"
             >
               <div className="rounded-full bg-slate-100  p-2 shadow-xl flex justify-center items-center animate__animated animate__fadeInUp">

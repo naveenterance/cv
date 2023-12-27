@@ -113,7 +113,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/naveen-terance-a0732a14b/ "
             target="_blank"
           >
-            https://www.linkedin.com/in/naveen-terance-a0732a14b/
+            https://www.linkedin.com/in/naveen-terance/
           </a>
         </div>
       </div>
