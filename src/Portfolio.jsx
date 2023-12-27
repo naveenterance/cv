@@ -280,7 +280,7 @@ const Portfolio = ({ onPageChange }) => {
 
             <div className="col-span-2 ">
               <a
-                href="https://naveenterance.github.io/pokemon-api/"
+                href="https://chat-react-naveenterances-projects.vercel.app/"
                 target="_blank"
                 className=" "
               >
