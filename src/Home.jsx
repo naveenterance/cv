@@ -3,6 +3,18 @@ const Home = () => {
   const [contributions, setContributions] = useState(0);
   const [repositories, setRepositories] = useState(0);
 
+  const handleDownload = () => {
+    // Replace 'your-pdf-file.pdf' with the actual file name
+    const pdfUrl = "./Naveen_Resume.pdf";
+
+    const a = document.createElement("a");
+    a.href = pdfUrl;
+    a.download = "downloaded-file.pdf"; // Specify the desired download file name
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   useEffect(() => {
     // Fetch contributions
     fetch("https://api.github.com/repos/naveenterance")
@@ -38,10 +50,10 @@ const Home = () => {
     <>
       {" "}
       <div className="w-full h-full    mt-24  mb-12 lg:flex  ">
-        <div className="lg:w-1/4 h-64  m-2 flex-col items-center justify-center">
+        <div className="lg:w-1/4 h-64  m-2 flex-col items-center justify-center ">
           <img
             src="https://avatars.githubusercontent.com/u/87982480?v=4"
-            className="m-auto max-h-full max-w-full  animate__animated animate__fadeInLeft"
+            className="m-auto max-h-full max-w-full  animate__animated animate__fadeInUp rounded-full shadow-xl"
             alt="Your Alt Text"
           />
           <div className="flex justify-around  p-2">
@@ -92,9 +104,24 @@ const Home = () => {
               src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-repository-agile-flaticons-flat-flat-icons.png"
               alt="external-repository-agile-flaticons-flat-flat-icons"
             />
-            <p className="font-bold">
+            <p className="font-semibold opacity-65 m-auto">
               Repositories: {repositories == 0 ? "30" : repositories}
             </p>
+          </div>
+          <div className="w-72 h-1/6 bg-slate-100 shadow-lg rounded-3xl m-4 flex p-4 animate__animated animate__fadeInUp cursor-pointer">
+            {" "}
+            <img
+              width="40"
+              height="40"
+              src="https://img.icons8.com/office/40/open-resume.png"
+              alt="open-resume"
+            />
+            <div
+              class="m-auto  lg:text-sm text-xs tracking-wide font-semibold w-40  "
+              onClick={handleDownload}
+            >
+              Download Resume
+            </div>
           </div>
         </div>
         <div className="flex-col">
@@ -129,8 +156,8 @@ const Home = () => {
                 </g>
               </svg>
             </div>
-            <div className="xl:visible invisible animate__animated lg:animate__fadeInRight animate__tada m-2 w-24 h-36 font-bold rounded-2xl shadow-lg  bg-slate-100  p-4">
-              <p className="opacity-25">use arrow keys to navigate</p>
+            <div className="xl:visible invisible animate__animated lg:animate__fadeInDown animate__tada m-2 w-24 h-36 font-bold rounded-2xl shadow-lg  bg-slate-100  p-4">
+              <p className="opacity-45">use arrow keys to navigate</p>
             </div>
           </div>
           <div className="rounded-3xl shadow-lg p-2 animate__animated animate__fadeInDown bg-slate-100 m-2">
@@ -142,14 +169,17 @@ const Home = () => {
         </div>
 
         <div
-          className="lg:w-1/2  flex-col m-2 animate__animated animate__fadeInRight
+          className="lg:w-1/2  flex-col m-2 animate__animated animate__fadeInDown
         "
         >
           <div className="bg-slate-100 p-4 rounded-3xl mb-2 font-semibold">
             <img src="./code.png" className="w-full mx-auto mb-2" />
-            Embracing simplicity and elegance.<br></br>
-            Carefully chosen color palette <br></br>
-            Visually pleasing & highly functional
+            <p className="opacity-65">
+              {" "}
+              Embracing simplicity and elegance.<br></br>
+              Carefully chosen color palettes. <br></br>
+              Visually pleasing & highly functional.
+            </p>
           </div>
         </div>
       </div>

@@ -13,11 +13,11 @@ const Contact = () => {
   };
   return (
     <div class="p-6 shadow-lg bg-slate-100   mb-12 rounded-xl mt-12 lg:w-3/4  mx-auto animate__animated lg:animate__fadeInRight  animate__fadeInUp">
-      <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight animate__animated lg:animate__fadeInLeft">
+      <h1 class="text-4xl sm:text-5xl text-red-300 opacity-45  font-extrabold tracking-tight animate__animated lg:animate__fadeInLeft">
         Get in touch
       </h1>
 
-      <div class="flex items-center mt-8 w-full text-gray-600 hover:underline hover:decoration-red-300 hover:decoration-2">
+      <div class="flex items-center mt-8 w-full text-gray-600 hover:text-red-300 hover:decoration-red-300 hover:decoration-2">
         <svg
           fill="none"
           stroke="currentColor"
@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div class="flex items-center mt-4 text-gray-600 hover:underline hover:decoration-red-300 hover:decoration-2">
+      <div class="flex items-center mt-4 text-gray-600 hover:text-red-300 hover:decoration-red-300 hover:decoration-2">
         <svg
           fill="none"
           stroke="currentColor"
@@ -69,7 +69,7 @@ const Contact = () => {
         </a>
       </div>
 
-      <div class="flex items-center mt-2 text-gray-600 hover:underline hover:decoration-red-300 hover:decoration-2">
+      <div class="flex items-center mt-2 text-gray-600 hover:text-red-300 hover:decoration-red-300 hover:decoration-2">
         <img
           width="36"
           height="36"
@@ -82,7 +82,7 @@ const Contact = () => {
           </div>
         </a>
       </div>
-      <div class="flex items-center mt-4 text-gray-600  hover:underline hover:decoration-red-300 hover:decoration-2">
+      <div class="flex items-center mt-4 text-gray-600  hover:text-red-300 hover:decoration-red-300 hover:decoration-2">
         <img src="./github.gif" className="w-8 h-8" />
         <a href="https://github.com/naveenterance" target="_blank">
           <div class="ml-2  lg:text-lg text-xs tracking-wide font-semibold w-40 ">
@@ -90,7 +90,7 @@ const Contact = () => {
           </div>
         </a>
       </div>
-      <div class="flex items-center mt-4 text-gray-600  hover:underline hover:decoration-red-300 hover:decoration-2">
+      <div class="flex items-center mt-4 text-gray-600  hover:text-red-300 hover:decoration-red-300 hover:decoration-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -117,7 +117,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <div class="flex items-center mt-4 text-gray-600  hover:underline hover:decoration-red-300 hover:decoration-2">
+      <div class="flex items-center mt-4 text-gray-600  hover:text-red-300 hover:decoration-red-300 hover:decoration-2">
         <img
           width="40"
           height="40"
@@ -125,7 +125,7 @@ const Contact = () => {
           alt="open-resume"
         />
         <div
-          class="ml-1  lg:text-sm text-xs tracking-wide font-semibold w-40 "
+          class="ml-1  lg:text-sm text-xs tracking-wide font-semibold w-40 cursor-pointer "
           onClick={handleDownload}
         >
           Download Resume

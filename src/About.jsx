@@ -11,7 +11,7 @@ const About = () => {
         />
 
         <div class="flex flex-col justify-between p-4 leading-normal ">
-          <h5 class="mb-8 mx-auto text-2xl font-bold tracking-tight text-gray-900">
+          <h5 class="mb-8 mx-auto text-2xl font-bold tracking-tight text-red-300">
             Frontend
           </h5>
           <div class="mb-3 font-normal flex">
@@ -33,7 +33,7 @@ const About = () => {
 
       <div class="flex flex-col  items-center mx-auto mt-12  rounded-xl lg:w-1/2 shadow-lg bg-slate-100 md:flex-row hover:bg-gray-100 animate__animated lg:animate__fadeInRight animate__fadeInUp">
         <div class=" flex-col justify-between p-8 leading-normal">
-          <h5 class="mb-8 mx-auto text-2xl font-bold tracking-tight text-gray-900">
+          <h5 class="mb-8 mx-auto text-2xl font-bold tracking-tight text-red-300">
             Backend
           </h5>
           <div class="mb-3 font-normal flex">
