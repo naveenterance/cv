@@ -12,7 +12,7 @@ const Contact = () => {
     document.body.removeChild(a);
   };
   return (
-    <div class="p-6  bg-gray-100  sm:rounded-lg mt-12 lg:w-3/4  mx-auto animate__animated lg:animate__fadeInRight  animate__fadeInUp">
+    <div class="p-6 shadow-lg bg-slate-100   mb-12 rounded-xl mt-12 lg:w-3/4  mx-auto animate__animated lg:animate__fadeInRight  animate__fadeInUp">
       <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight animate__animated lg:animate__fadeInLeft">
         Get in touch
       </h1>

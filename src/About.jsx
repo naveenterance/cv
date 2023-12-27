@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const About = () => {
   return (
     <>
-      <div class="flex flex-col items-center mx-auto mt-12  rounded-lg lg:w-1/2 shadow md:flex-row  hover:bg-gray-100 animate__animated lg:animate__fadeInLeft animate__fadeInDown">
+      <div class="flex flex-col items-center mx-auto mt-12  rounded-xl lg:w-1/2 shadow-lg bg-slate-100 md:flex-row  hover:bg-gray-100 animate__animated lg:animate__fadeInLeft animate__fadeInDown">
         <img
           class="object-cover lg:w-1/2 rounded-lg h-48   m-1"
           src="./frontend.jpg"
@@ -31,7 +31,7 @@ const About = () => {
         </div>
       </div>
 
-      <div class="flex flex-col  items-center mx-auto mt-12  rounded-lg lg:w-1/2 shadow md:flex-row hover:bg-gray-100 animate__animated lg:animate__fadeInRight animate__fadeInUp">
+      <div class="flex flex-col  items-center mx-auto mt-12  rounded-xl lg:w-1/2 shadow-lg bg-slate-100 md:flex-row hover:bg-gray-100 animate__animated lg:animate__fadeInRight animate__fadeInUp">
         <div class=" flex-col justify-between p-8 leading-normal">
           <h5 class="mb-8 mx-auto text-2xl font-bold tracking-tight text-gray-900">
             Backend

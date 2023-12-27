@@ -19,38 +19,6 @@ function App() {
     setPage(value);
   };
 
-  // const [scrollPosition, setScrollPosition] = useState(0);
-
-  // const handleScroll = () => {
-  //   const currentPosition = window.scrollY;
-
-  //   const scrollThreshold = 50;
-
-  //   if (currentPosition > scrollPosition + scrollThreshold) {
-  //     setView((prevView) => getNextView(prevView, "down"));
-  //   }
-
-  //   if (currentPosition < scrollPosition - scrollThreshold) {
-  //     setView((prevView) => getNextView(prevView, "up"));
-  //   }
-
-  //   setScrollPosition(currentPosition);
-  // };
-
-  // const getNextView = (currentView, direction) => {
-  //   switch (currentView) {
-  //     case "Home":
-  //       return direction === "down" ? "Portfolio" : "Contact";
-  //     case "Portfolio":
-  //       return direction === "down" ? "About" : "Home";
-  //     case "About":
-  //       return direction === "down" ? "Contact" : "Portfolio";
-  //     case "Contact":
-  //       return direction === "down" ? "Home" : "About";
-  //     default:
-  //       return currentView;
-  //   }
-  // };
   const handleKeyDown = (event) => {
     if (event.keyCode === 40) {
       setView((prevView) => {
@@ -82,18 +50,17 @@ function App() {
   };
 
   useEffect(() => {
-    // window.addEventListener("scroll", handleScroll);
     window.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      // window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
+
   return (
     <>
-      <div className="fixed top-8 h-8 lg:left-1/2 left-48 transform -translate-x-1/2 -translate-y-1/2  lg:bg-gray-100  z-50 px-2 pb-4  rounded-lg bg-gray-100">
-        <div className="flex  items-center">
+      <div className=" fixed top-8 h-8 lg:w-3/4 w-72   z-50">
+        <div className="flex  items-center ">
           <p
             className={`w-24 h-1 mr-1 text-slate-700 font-extrabold  ${
               view !== "Home" && "text-opacity-25"
@@ -150,19 +117,13 @@ function App() {
             }`}
           ></hr>
         </div>
-        <div className="w-1 h-4 ml-24 mt-1 pl-1">
-          <div className="w-3/4 bg-gray-200 rounded-full h-1 mb-4">
-            <div
-              className={`bg-red-300 h-1 rounded-full ${
-                page === 1 && view === "Portfolio" ? "w-8" : ""
-              } ${page === 2 && view === "Portfolio" ? "w-16" : ""} ${
-                page === 3 && view === "Portfolio" ? "w-24" : ""
-              } transition-width ease-in-out duration-300`}
-            ></div>
-          </div>
-        </div>
       </div>
-      {view == "Home" && <Home />}
+      {view == "Home" && (
+        <div className="flex-col pb-12">
+          <Home /> <Portfolio onPageChange={handlePageChange} />
+          <About /> <Contact />
+        </div>
+      )}
       {view == "Portfolio" && <Portfolio onPageChange={handlePageChange} />}
       {view == "Contact" && <Contact />}
       {view == "About" && <About />}
