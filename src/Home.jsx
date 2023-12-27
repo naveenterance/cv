@@ -108,7 +108,7 @@ const Home = () => {
               Repositories: {repositories == 0 ? "30" : repositories}
             </p>
           </div>
-          <div className="w-72 h-1/6 bg-slate-100 shadow-lg rounded-3xl m-4 flex p-4 animate__animated animate__fadeInUp cursor-pointer">
+          <div className="w-72 h-1/6 bg-slate-100 shadow-xl  rounded-3xl  m-4 flex p-4 animate__animated animate__fadeInUp cursor-pointer">
             {" "}
             <img
               width="40"

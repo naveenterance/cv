@@ -50,7 +50,7 @@ const About = () => {
         </div>
 
         <img
-          class="object-cover lg:w-1/2 rounded-lg h-48  m-1 "
+          class="object-cover lg:w-full rounded-lg h-48  m-1 "
           src="./backend.jpg"
           alt="Frontend Preview"
         />

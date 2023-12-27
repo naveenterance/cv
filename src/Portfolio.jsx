@@ -69,11 +69,11 @@ const Portfolio = ({ onPageChange }) => {
       {page == 1 && (
         <div className=" h-full  lg:w-full   mt-12  mb-12   ">
           <div className="px-4 lg:mx-auto   grid  lg:grid-cols-4  grid-col-2 gap-4  ">
-            <div className="  lg:col-span-2  align-left  flex-col animate__animated animate__fadeInLeft">
+            <div className="  lg:col-span-2  align-left  flex-col animate__animated animate__fadeInLeft lg:p-24">
               <div className="lg:h-24 "></div>
-              <p className="text-xl font-bold  m-4 p-4  bg-slate-100 rounded-xl shadow-xl  ">
+              <div className="text-xl font-bold  m-4 p-4  bg-slate-100 rounded-xl shadow-xl  ">
                 Pokemon API
-              </p>
+              </div>
               <div className="flex justify-center items-center ">
                 <a
                   href="https://github.com/naveenterance/pokemon-api"
@@ -189,7 +189,7 @@ const Portfolio = ({ onPageChange }) => {
       {page == 2 && (
         <div className=" h-full  lg:w-full   mt-12  mb-12   ">
           <div className="px-4 lg:mx-auto   grid  lg:grid-cols-4  grid-col-2 gap-4  ">
-            <div className="  lg:col-span-2  align-left  flex-col animate__animated animate__fadeInLeft">
+            <div className="  lg:col-span-2  align-left  flex-col animate__animated animate__fadeInLeft lg:p-24">
               <div className="lg:h-24 "></div>
               <p className="text-xl font-bold  m-4 p-4  bg-slate-100 rounded-xl shadow-xl  ">
                 Chat app
