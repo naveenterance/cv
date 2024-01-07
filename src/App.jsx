@@ -97,22 +97,22 @@ function App() {
         </div>
         <div className="flex mt-4">
           <hr
-            className={`w-24 h-1 mr-1 bg-green-300 border-0 rounded font-extrabold animate__animated ${
+            className={`w-24 h-1 mr-1 bg-slate-300 border-0 rounded font-extrabold animate__animated ${
               view == "Home" ? "animate__zoomIn" : "animate__zoomOut"
             }`}
           ></hr>
           <hr
-            className={`w-24 h-1 mr-1 bg-green-300 border-0 rounded font-extrabold animate__animated ${
+            className={`w-24 h-1 mr-1 bg-slate-300 border-0 rounded font-extrabold animate__animated ${
               view == "Portfolio" ? "animate__zoomIn" : "animate__zoomOut"
             }`}
           ></hr>
           <hr
-            className={`w-24 h-1 mr-1 bg-green-300 border-0 rounded font-extrabold animate__animated ${
+            className={`w-24 h-1 mr-1 bg-slate-300 border-0 rounded font-extrabold animate__animated ${
               view == "About" ? "animate__zoomIn" : "animate__zoomOut"
             }`}
           ></hr>
           <hr
-            className={`w-24 h-1 mr-1 bg-green-300 border-0 rounded font-extrabold animate__animated ${
+            className={`w-24 h-1 mr-1 bg-slate-100 border-0 rounded font-extrabold animate__animated ${
               view == "Contact" ? "animate__zoomIn" : "animate__zoomOut"
             }`}
           ></hr>

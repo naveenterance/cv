@@ -58,7 +58,7 @@ const Portfolio = ({ onPageChange }) => {
       <div className="  mx-auto   mt-24 lg:w-1/4 ">
         <div className="   rounded-full   ">
           <div
-            className={`bg-green-300 border-2  border-slate-100 h-2 rounded-full mx-auto ${
+            className={`bg-slate-100 border-2  border-slate-100 h-2 rounded-full mx-auto ${
               page === 1 && "w-2/6"
             } ${page === 2 && "w-4/6"} ${
               page === 3 && "w-full"
